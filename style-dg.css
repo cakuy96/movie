@@ -1,0 +1,136 @@
+:root {
+    --main-color: #0ff;
+}
+
+/* === Anime Info Section === */
+.anime-container {
+    display: flex;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 1000px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    flex-wrap: wrap;
+}
+
+.anime-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.anime-info p {
+    margin: 5px 0;
+}
+
+.highlight {
+    background-color: #555;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--main-color);
+}
+
+/* === Episode Section === */
+.episode-wrapper {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #222;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.episode-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.episode-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    gap: 10px;
+}
+
+.episode-grid button {
+    background-color: #555;
+    color: var(--main-color);
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.episode-grid button.active {
+    background-color: var(--main-color);
+    color: #000;
+}
+
+/* === Download Button / Navigation === */
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 40px 0 20px 0;
+    margin-top: 20px;
+    position: relative;
+}
+
+.download-button {
+    background-color: #555;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+/* === Popup Manual Download === */
+#manualDownloadPopup {
+    display: none;
+    margin: 15px auto;
+    text-align: center;
+    background: #333;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    max-width: 800px;
+}
+
+#manualDownloadLink {
+    width: 80%;
+    padding: 8px;
+    color: black;
+}
+
+/* === Responsive === */
+@media screen and (max-width: 768px) {
+    .anime-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .anime-info {
+        text-align: center;
+    }
+
+    .highlight {
+        font-size: 1.2em;
+    }
+
+    .episode-grid {
+        grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    }
+}
