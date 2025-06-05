@@ -1,0 +1,68 @@
+<section id="videoSection" style="position: relative; max-width: 1000px; margin: auto;">
+    <video id="videoPlayer" controls autoplay muted playsinline style="width: 100%;">
+        <source src="" type="video/mp4">
+    </video>
+
+    <!-- Overlay Iklan -->
+    <div id="adOverlay" style="display: none;">
+        <div class="ad-wrapper">
+            <a href="https://www.admto.online" target="_blank">
+                <video id="adVideo" autoplay muted playsinline>
+                    <source src="https://dg21.b-cdn.net/iklan.mp4" type="video/mp4" />
+                </video>
+            </a>
+            <button id="closeAdBtn" disabled>Tutup Iklan (15)</button>
+        </div>
+    </div>
+    <a href="https://www.admto.online" target="_blank">
+        <div id="lowerThird">
+            <img src="https://i.imgur.com/J7zFKSR.png" alt="Watermark">
+        </div>
+    </a>
+</section>
+<div class='widget-content'><!-- &#9989; HTML + CSS + JS untuk Blogger -->
+    <div id="rotator-banners" style="text-align:center;">
+        <a href="https://www.admto.xyz" class="rotator-item" target="_blank">
+            <img src="https://i.postimg.cc/2S7LxXc0/dauntogel-gif-web2.gif" alt="Dauntogel"
+                style="width:100%;max-height:120px;height:auto;" />
+        </a>
+        <a href="https://www.admto.site" class="rotator-item" target="_blank">
+            <img src="https://i.postimg.cc/1zWgkVZ6/admintoto-gif-web.gif" alt="Admintoto"
+                style="width:100%;max-height:120px;height:auto;" />
+        </a>
+        <a href="https://www.admto.info" class="rotator-item" target="_blank">
+            <img src="https://i.postimg.cc/nhJQBtks/daftar-putih-gif.gif" alt="Redmitoto"
+                style="width:100%;max-height:120px;height:auto;" />
+        </a>
+        <a href="https://heylink.me/ortugaming.edu" class="rotator-item" target="_blank">
+            <img src="https://i.postimg.cc/RZvcdytq/gif-ortu-adadad.gif" alt="Ortugaming"
+                style="width:100%;max-height:120px;height:auto;" />
+        </a>
+        <a href="https://heylink.me/kaskusgaming.edu" class="rotator-item" target="_blank">
+            <img src="https://i.postimg.cc/YqJCXxHm/gif_kaskus_sklajasj_.gif" alt="Kaskusgaming"
+                style="width:100%;max-height:120px;height:auto;" />
+        </a>
+        <a href="https://shorturl.at/1XHnO" class="rotator-item" target="_blank">
+            <img src="https://i.postimg.cc/KYNJm7YN/DAUNPOKER_A640.gif" alt="Daun Poker"
+                style="width:100%;max-height:120px;height:auto;" />
+        </a>
+        <a href="https://shorturl.at/njNjq" class="rotator-item" target="_blank">
+            <img src="https://i.postimg.cc/HWhXDyjD/gif_doyan_poker_final.gif" alt="Doyan Poker"
+                style="width:100%;max-height:120px;height:auto;" />
+        </a>
+    </div>
+    <!-- End Ads Rotator -->
+
+    <div class="episode-grid" id="episodeButtons" style="display: none;"></div>
+
+    <div class="navigation">
+        <a class="download-button" href="#" id="downloadBtn">Download MP4</a>
+    </div>
+
+    <div id="manualDownloadPopup" style="display: none;">
+        <p>Link download siap! Klik tombol atau salin link di bawah:</p>
+        <input type="text" id="manualDownloadLink" readonly /><br>
+        <button onclick="copyToClipboard()"
+            style="width: 150px; padding: 6px 12px; font-size: 14px; background-color: #555; color: var(--main-color); border-radius: 6px;">Salin
+            Link</button>
+    </div>
