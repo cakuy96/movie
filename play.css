@@ -1,0 +1,43 @@
+#adOverlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+
+    .ad-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    #adOverlay video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #adOverlay #closeAdBtn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: #111;
+        color: #fff;
+        border: none;
+        padding: 10px 16px;
+        border-radius: 6px;
+        font-size: 14px;
+        cursor: not-allowed;
+        opacity: 0.6;
+    }
+
+    #adOverlay #closeAdBtn.enabled {
+        cursor: pointer;
+        opacity: 1;
+    }
