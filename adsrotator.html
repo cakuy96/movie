@@ -1,0 +1,53 @@
+<!-- Ads Rotator -->
+<div class='widget-content'><!-- &#9989; HTML + CSS + JS untuk Blogger -->
+    <div id="rotator-banners" style="text-align:center;">
+        <a href="https://www.admto.xyz" class="rotator-item" target="_blank">
+            <img src="https://i.postimg.cc/2S7LxXc0/dauntogel-gif-web2.gif" alt="Dauntogel"
+                style="width:100%;max-height:120px;height:auto;" />
+        </a>
+        <a href="https://www.admto.site" class="rotator-item" target="_blank">
+            <img src="https://i.postimg.cc/1zWgkVZ6/admintoto-gif-web.gif" alt="Admintoto"
+                style="width:100%;max-height:120px;height:auto;" />
+        </a>
+        <a href="https://www.admto.info" class="rotator-item" target="_blank">
+            <img src="https://i.postimg.cc/nhJQBtks/daftar-putih-gif.gif" alt="Redmitoto"
+                style="width:100%;max-height:120px;height:auto;" />
+        </a>
+        <a href="https://heylink.me/ortugaming.edu" class="rotator-item" target="_blank">
+            <img src="https://i.postimg.cc/RZvcdytq/gif-ortu-adadad.gif" alt="Ortugaming"
+                style="width:100%;max-height:120px;height:auto;" />
+        </a>
+        <a href="https://heylink.me/kaskusgaming.edu" class="rotator-item" target="_blank">
+            <img src="https://i.postimg.cc/YqJCXxHm/gif_kaskus_sklajasj_.gif" alt="Kaskusgaming"
+                style="width:100%;max-height:120px;height:auto;" />
+        </a>
+        <a href="https://shorturl.at/1XHnO" class="rotator-item" target="_blank">
+            <img src="https://i.postimg.cc/KYNJm7YN/DAUNPOKER_A640.gif" alt="Daun Poker"
+                style="width:100%;max-height:120px;height:auto;" />
+        </a>
+        <a href="https://shorturl.at/njNjq" class="rotator-item" target="_blank">
+            <img src="https://i.postimg.cc/HWhXDyjD/gif_doyan_poker_final.gif" alt="Doyan Poker"
+                style="width:100%;max-height:120px;height:auto;" />
+        </a>
+    </div>
+    <!-- End Ads Rotator -->
+  <!-- Panggil CDN JS -->
+    <script>
+        (function () {
+            var banners = document.querySelectorAll("#rotator-banners .rotator-item");
+            var index = -1;
+
+            function showNext() {
+                banners.forEach(b => b.style.display = 'none');
+                let next;
+                do {
+                    next = Math.floor(Math.random() * banners.length);
+                } while (next === index);
+                index = next;
+                banners[index].style.display = 'block';
+            }
+
+            showNext();
+            setInterval(showNext, 15000); // Ganti tiap 60 detik
+        })();
+    </script>
