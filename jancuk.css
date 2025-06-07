@@ -1,0 +1,21 @@
+#lowerThird {
+        position: absolute;
+        bottom: 30px;
+        right: 15px;
+        z-index: 5;
+        opacity: 0.25;
+      }
+      
+    #lowerThird img {
+        width: 100px; /* Atur ukuran sesuai kebutuhan */
+        height: auto;
+      }
+    @media (max-width: 600px) {
+        #lowerThird {
+            bottom: 10px;
+            
+          }
+          #lowerThird img {
+            width: 70px;
+          }
+        }
