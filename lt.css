@@ -1,0 +1,14 @@
+#lowerThird {
+        position: absolute;
+        bottom: 20px;     /* Jarak dari bawah */
+        right: 15px;       /* Jarak dari kiri */
+        z-index: 9999;    /* Supaya muncul di atas video */
+        width: 120px;     /* Ubah sesuai ukuran watermark */
+        opacity: 0.25;     /* Transparansi opsional */
+      }
+      
+      #lowerThird img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
